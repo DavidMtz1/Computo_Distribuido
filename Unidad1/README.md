@@ -6,3 +6,21 @@ video 2: It explains why we should create a distributed system.
 8. You will need a force server to solve problems that you cannot do simply with a simple computer. Explain that if you handle an application or chat and require information sharing, the server will also be necessary.
 7. You need policies in the distributed system (rules).
 6. You must create a system proportional to the users who use it, you should not make a system too expensive if you will not take advantage.
+
+
+Continuing with the video 2 summary
+
+
+5. You must create a trust-based system and have a good design implemented.
+
+4. PERFORMANCE: You must have a distributed system established in a place where customers do not suffer from weak coverage. The closer it is the better.
+
+3. You must depend on a cloud service, it is not necessary to have a system distributed with 2 carriers.
+
+2. You must have a distributed system with good support, not only on a single computer, but more so that it is safer and thus avoid problems
+
+1. You must create a scalable distributed system, to avoid problems in the future and thus improve your performance and reduce costs. It only applies if you really know what it will take in the future
+
+You should always know why you are going to create a distributed system, but you will only do a job for nothing.
+
+Thats all.
