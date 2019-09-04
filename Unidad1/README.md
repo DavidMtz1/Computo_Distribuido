@@ -77,6 +77,22 @@ They are scales, that is, it can support more than one user.
 
 
 
+Video 1: What is a distributed system?
+---------------------------------------
+
+
+
+
+Explain distributed system part two
+-----------------------------------
+In the video he explains that a more complex system does not make it a disadvantage, since that helps to make it more secure and reliable.
+Mention that Facebook and Google use distributed systems since you have to be mass scalable, they have to be fast and very safe.
+If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other ser
+
+
+
+
+
 video 2: It explains why we should create a distributed system.
 
 10. You should know the reasons why you should create a distributed system.
