@@ -1,3 +1,81 @@
+Video 1 reviews.
+-----------------
+
+
+In the video he explains that what is a distributed system, in which he recommends not doing centralized systems, these have their advantages and disadvantages
+
+The centralized systems are low cost, easy to understand and fast for a simple user.
+
+The disadvantages are that if the connection to the system is lost, you will no longer be able to access the information inside.
+
+Distributed systems are fault tolerant, if the connection with one is lost, you have access to the information.
+They are scales, that is, it can support more than one user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 video 2: It explains why we should create a distributed system.
 
