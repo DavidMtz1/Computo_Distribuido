@@ -48,3 +48,11 @@ You should always know why you are going to create a distributed system, but you
 Thats all.
 
 /////////////////////////////////////////////////////
+
+Video 3: How to learn distributed system?
+-----------------------------------
+In the video he explains how to learn about distributed systems, which is a study in systems and not in theory.
+
+It shows that systems, even if they fail, can continue to function.
+
+There are different types of architectures of distributed systems, this makes them safer for their different implementations
