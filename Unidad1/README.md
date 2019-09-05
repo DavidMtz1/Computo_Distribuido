@@ -56,3 +56,13 @@ In the video he explains how to learn about distributed systems, which is a stud
 It shows that systems, even if they fail, can continue to function.
 
 There are different types of architectures of distributed systems, this makes them safer for their different implementations
+
+
+Continuing with the video 2 summary.
+-----------------------------------
+
+We need to know exactly what type of distributed system we are going to implement so that it has a better performance when using it.
+
+We need to have established names to our processes so that they can be easily found by the other computers connected to the system.
+
+When working with distributed systems we must take into account the time, since in the systems events or situations will occur and both users and the server must be correctly synchronized.
