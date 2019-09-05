@@ -58,7 +58,7 @@ It shows that systems, even if they fail, can continue to function.
 There are different types of architectures of distributed systems, this makes them safer for their different implementations
 
 
-Continuing with the video 2 summary.
+Continuing with the video 3 summary.
 -----------------------------------
 
 We need to know exactly what type of distributed system we are going to implement so that it has a better performance when using it.
@@ -66,3 +66,19 @@ We need to know exactly what type of distributed system we are going to implemen
 We need to have established names to our processes so that they can be easily found by the other computers connected to the system.
 
 When working with distributed systems we must take into account the time, since in the systems events or situations will occur and both users and the server must be correctly synchronized.
+
+/////////////////////////////////////////////////////
+
+video 4: What could go wrong?
+-----------------------------------
+
+The video title is: What could go wrong?
+
+In the video he explains that if we make a fault-tolerant system, we must know the failures that are going to occur and identify the errors that we could not solve in case they happen.
+
+He asks us a question saying what would be the problems that we would present in our distributed systems.
+
+1- The server stops working
+2- That it fails constantly
+3- That the information be lost
+4- Denial of service attacks
