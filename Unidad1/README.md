@@ -101,3 +101,14 @@ If we have a network, the information can be set to be in 1 node or several, so 
 If we use a network of nodes and a node has to send information to another node, and this fails, the node will look for another route to be able to send the information that was requested. All this is done thanks to the network partition.
 
 If we are connected to a network and a node fails, the nodes will be divided into 2 subnets to continue interacting with each other. They will always be divided by 2 to have the same number of nodes.
+
+
+Continuing with the video 5 summary: The many types of failures
+------------------------------------
+
+
+The main node failures can be caused by power outages, hardware failures or running out of memory or filling your storage disk. A fail stop is simple as any engineer can take certain strategies. when it stops and is still on one can restart it and restore the data to the last point, this is called checkpoint point, the restart time of the computer can generate high latency
+Another option is to switch another node, for this the status is saved periodically on other computers
+
+Another fault that has to be dealt with is the Byzantine failure
+Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version
