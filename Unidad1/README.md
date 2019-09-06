@@ -82,3 +82,22 @@ He asks us a question saying what would be the problems that we would present in
 2- That it fails constantly
 3- That the information be lost
 4- Denial of service attacks
+
+
+///////////////////////////////////////////////////////
+
+Video 5: The many types of failures
+------------------------------------
+
+
+When we make distributed systems, we have to have classified the types of failures that will present us to have better solutions.
+
+There is a great different between the failure of a network to the failure of a node.
+
+When the network fails, you can lose packets, information, data.
+
+If we have a network, the information can be set to be in 1 node or several, so the information is more secure and simple to use. This prevents congestion and corruption of information.
+
+If we use a network of nodes and a node has to send information to another node, and this fails, the node will look for another route to be able to send the information that was requested. All this is done thanks to the network partition.
+
+If we are connected to a network and a node fails, the nodes will be divided into 2 subnets to continue interacting with each other. They will always be divided by 2 to have the same number of nodes.
