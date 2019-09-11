@@ -112,3 +112,38 @@ Another option is to switch another node, for this the status is saved periodica
 
 Another fault that has to be dealt with is the Byzantine failure
 Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version
+
+ 
+//////////////////////////////////////////////////////////////////
+
+Video 6:
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+
+Video 7: SLIs SLOs and SLAs
+-------------------------------------------
+
+Review of video 7: SLI SLO and SLA
+
+SLI: Service level indicator (Service level indicator): What are you measuring: Indicates the response time to the request that the user is requesting from the system.
+
+SLO: Service level Objective: How good it should be: We want all users or at least 99% to obtain the requested results in set times (for example, 500 milliseconds)
+
+SLA: Service level agreement: SLO + consequences: It is the same as the SLO, only that it integrates a system in which you assure the client that his system will work, otherwise, you pay the consequences of what was promised .
+
+Studying these 3 terms helps us learn what really matters, we don't waste time on things that don't matter.
