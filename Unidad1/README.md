@@ -147,3 +147,12 @@ SLO: Service level Objective: How good it should be: We want all users or at lea
 SLA: Service level agreement: SLO + consequences: It is the same as the SLO, only that it integrates a system in which you assure the client that his system will work, otherwise, you pay the consequences of what was promised .
 
 Studying these 3 terms helps us learn what really matters, we don't waste time on things that don't matter.
+
+A reliable 90% system is inactive for 3 days a month.
+A reliable 99% system is inactive for 7 hours per month.
+A reliable 99.9% system is idle for 43 minutes per month.
+A reliable 99.99% system is inactive for 4 minutes per month.
+
+To reach the reliability of 99.999% per month, it is almost impossible since they are 25 inactive seconds per month and for a system to be repaired in such a short time it is difficult.
+
+Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a month that is not active. This is checked every minute.
