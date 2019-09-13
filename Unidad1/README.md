@@ -113,26 +113,16 @@ Another option is to switch another node, for this the status is saved periodica
 Another fault that has to be dealt with is the Byzantine failure
 Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version
 
- 
+
 //////////////////////////////////////////////////////////////////
 
-Video 6:
+Video 6: Byzantine fault tolerance.
 -------------------------------------------
 
+Byzantine failures can be nodes that send conflict messages to other nodes, this can cause the results to be incorrect,
+squamous nodes can be one of the things that proves that failure, just like a malicious node that could be affected by a hacker.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+There are 2 general problems, the consensus problem is when two nodes
 //////////////////////////////////////////////////////////////////
 
 Video 7: SLIs SLOs and SLAs
@@ -156,3 +146,10 @@ A reliable 99.99% system is inactive for 4 minutes per month.
 To reach the reliability of 99.999% per month, it is almost impossible since they are 25 inactive seconds per month and for a system to be repaired in such a short time it is difficult.
 
 Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a month that is not active. This is checked every minute.
+
+//////////////////////////////////////////////////////////////////
+
+Video 8:
+-------------------------------------------
+
+//////////////////////////////////////////////////////////////////
