@@ -153,3 +153,21 @@ Video 8:
 -------------------------------------------
 
 //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+
+
+Video 9: Paxos Simplified
+-------------------------------------------
+Paxos is a family of protocols for solving consensus in a network of unreliable processors (that is, processors that may fail). Consensus is the process of agreeing on one result among a group of participants. This problem becomes difficult when the participants or their communication medium may experience failures.
+
+Suppose the decision is to take the largest number. Therefore a proposal in a round is considered valid if it is greater than the rest of the proposals in that round. All those proposals for that round with smaller numbers are considered invalid.
+
+It also explains the problem of the Byzantine generals. How to find a traitor if there are generals or lieutenants.
