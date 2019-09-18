@@ -151,14 +151,16 @@ Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a 
 
 Video 8:
 -------------------------------------------
+A multi-user char will be built in the project class
+an appspot.com chat was created, upon entering you are asked if it is okay to share your email address with this application.
+Once accessing, it retrieves the last message sent on the server and displays it on the screen.
+When you send a new message in the chat, everyone who is connected to the server can see the message, and it is saved in the app engine data store.
 
-//////////////////////////////////////////////////////////////////
+AppEngine Pros:
+Scaling done, authentication done, reliable storage, multicast done, SRE as a service, simple code.
 
-
-
-
-
-
+App Engine Cons:
+Cost money, only uses google login, channel deprocated, needs loadtesting, needs application-level monitoring.
 
 
 //////////////////////////////////////////////////////////////////
