@@ -173,3 +173,34 @@ Paxos is a family of protocols for solving consensus in a network of unreliable 
 Suppose the decision is to take the largest number. Therefore a proposal in a round is considered valid if it is greater than the rest of the proposals in that round. All those proposals for that round with smaller numbers are considered invalid.
 
 It also explains the problem of the Byzantine generals. How to find a traitor if there are generals or lieutenants.
+
+//////////////////////////////////////////////////////////////////
+
+Video 11: Introduction to Blockshain Consensus
+-------------------------------------------
+
+This video gives us a brief summary of what the following videos will be about.
+in the first video he will explain the bitcoin dlockshain, in the second video it will be seen how to replicate a blockshain to another computer forming a consensus.
+in the third video the bitcoin blockshain consensus algorithm will be shown to compare it with the paxos algorithm.
+
+//////////////////////////////////////////////////////////////////
+
+Video 12: What is a Blockshain
+-------------------------------------------
+Blockshain is a data structure
+Suppose we have a quantity of data, we store that data in a block and place an empty header. When more data arrives we create a second block in which and the hash of the first block will be placed to calculate that the first block is fine. It also serves to realize that an attacker tries to enter our block.
+In the case of blockshain bitcoins, the data is not stored in block but uses a data structure called Merkel's tree.
+A Merkel tree is a binary tree, so each node contains the ash of the nodes below it.
+
+//////////////////////////////////////////////////////////////////
+
+Video 13: Bitcoin Blockshain Consensus
+-------------------------------------------
+A bitcoin consensus cannot be created with basic algorithms like the raft of paxos and pbft since you may not reach a consensus because you don't have many votes available to complete the algorithm.
+Another problem is that if many bad computers are connected they can balance the votes, they can stop the system of creating consensus.
+Bitcoin needs an algorithm that is resistant to attackers who have accessed.
+To generate a bitcoin consensus you need to create a new block, that new block needs to be replicated to all the good nodes of the system.
+Our systems have livelock because we can add new blocks faster than learn them.
+The solution to this problem is to slow down our system, so every time you want to add a block you sleep a random period of time and after that time the block is added.
+When a network partition is created between the computers that were connected, the new blocks that are added will no longer get them from the other part of the network.
+to make a timer you can use cryptography and reliable computer modules.
