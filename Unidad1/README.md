@@ -204,3 +204,12 @@ Our systems have livelock because we can add new blocks faster than learn them.
 The solution to this problem is to slow down our system, so every time you want to add a block you sleep a random period of time and after that time the block is added.
 When a network partition is created between the computers that were connected, the new blocks that are added will no longer get them from the other part of the network.
 to make a timer you can use cryptography and reliable computer modules.
+//////////////////////////////////////////////////////////////////
+
+Video 14:
+-------------------------------------------
+
+In bitcoin it is necessary to maintain an algorithm that is resistant to attacks, and is safe for users. Blockshain compared to other algorithms, is slower and has a high consumption of resources, but it is quite safe.
+
+A disadvantage of bitcoin is that it takes a long time to save the information of a block, since each block carries a duplicate of the previous one, but still bitcoin maintains a lower consumption of resources.
+Paxos or bullets can become even safer than the Blockshain algorithm
