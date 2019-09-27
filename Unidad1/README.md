@@ -213,3 +213,38 @@ In bitcoin it is necessary to maintain an algorithm that is resistant to attacks
 
 A disadvantage of bitcoin is that it takes a long time to save the information of a block, since each block carries a duplicate of the previous one, but still bitcoin maintains a lower consumption of resources.
 Paxos or bullets can become even safer than the Blockshain algorithm
+
+//////////////////////////////////////////////////////////////////
+
+Video 15: Distributed System Design Example (Unique ID)
+-------------------------------------------
+The acronym in English G U I D stands for Globally Unique ID, it is a unique identifier for each transaction made, that is, it will never generate an identical number on the same computer or on a system. Like the GetDate function, you are creating a different identifier every millisecond even if the function is corrupted, but in this use it is necessary for the same computer.
+
+For this you can use the identity, which consists of:
+IP address
+Ethernet HW Address
+CPU serial number
+
+To create an identifier that does not exist in the past we will use something called Monotonically increasing unique ID
+
+//////////////////////////////////////////////////////////////////
+
+Video 16: The CAP Theorem
+-------------------------------------------
+
+The computer scientists ask: how reliable can we build a system
+Consistency
+Availability
+Partition Tolerance
+
+We have seen distributed systems a lot in banks. The bank has our money balance and at the ATM it synchronizes and has access to the movements that the user can make, such as withdrawing money.
+
+But there are also failures in these distributed systems, using an example of a customer goes to withdraw money from an ATM:
+
+The first is if the customer goes to an ATM and is not working, he will have to find another to make his request.
+
+The second is that the client goes to the other ATM and is not working either
+
+
+For these types of problems, it is necessary to use “The Cap Theorem”
+Formalizes the trade-off between consistency and availability in the presence of partitions
