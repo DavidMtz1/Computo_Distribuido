@@ -1,5 +1,21 @@
+##
+- [Video 1 What is a distributed system](#video-1-what-is-a-distributed-system)
+- [Video 2 Why build a distributed system](#video-2-why-build-a-distributed-system)
+- [Video 3 How to learn distributed system?](#video-3-how-to-learn-distributed-system)
+- [Video 4 What could go wrong?](#video-4-what-could-go-wrong)
+- [Video 5 The many types of fail](#Video-5-the-many-types-of-fail)
+- [Video 6 Byzantine fault tolerance](#video-6-byzantine-fault-tolerance)
+- [Video 7 SLIs SLOs and SLAs](#video-7-slis-slos-and-slas)
+- [Video 8 Class Project](#video-8-lass-roject)
+- [Video 9 Paxos Simplified](#video-9-paxos-simplified)
+- [Video 11 Introduction to Blockshain Consensus](video-11-introduction-to-blockshain-consensus)
+- [Video 12 What is a Blockshain](#Video-12-what-is-a-blockshain)
+- [Video 13 Bitcoin Blockshain Consensus](#video-13-bitcoin-blockshain-consensus)
+- [Video 14 Should you use Bitcoin consensus](#video-14-should-you-use-bitcoin-consensus)
+- [Video 15 Distributed System Design Example](#video-15-distributed-system-design-example)
+- [Video 16 The CAP Theorem](video-16-the-cap-theorem)
 
-**Video 1 review: What is a distributed system**
+##Video 1 What is a distributed system
 
 *In the video he explains that what is a distributed system, in which he recommends not doing centralized systems, these have their advantages and disadvantages
 
@@ -17,7 +33,7 @@ Mention that Facebook and Google use distributed systems since you have to be ma
 If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other servers.*
 
 
-**Video 2: It explains why we should create a distributed system.**
+##Video 2 Why build a distributed system
 
 *10- You should know the reasons why you should create a distributed system.
 9- Because it's fun and it's because it's your job to create better solutions.
@@ -44,7 +60,7 @@ Thats all.*
 
 
 
-**Video 3: How to learn distributed system?**
+##Video 3 How to learn distributed system?
 
 *In the video he explains how to learn about distributed systems, which is a study in systems and not in theory.
 
@@ -63,7 +79,7 @@ We need to have established names to our processes so that they can be easily fo
 When working with distributed systems we must take into account the time, since in the systems events or situations will occur and both users and the server must be correctly synchronized.*
 
 
-**Video 4: What could go wrong?**
+##Video 4 What could go wrong
 
 *The video title is: What could go wrong?
 
@@ -76,7 +92,7 @@ He asks us a question saying what would be the problems that we would present in
 3- That the information be lost
 4- Denial of service attacks*
 
-**Video 5: The many types of failures**
+##Video 5 The many types of fail
 
 *When we make distributed systems, we have to have classified the types of failures that will present us to have better solutions.
 
@@ -99,14 +115,14 @@ Another option is to switch another node, for this the status is saved periodica
 Another fault that has to be dealt with is the Byzantine failure
 Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version*
 
-**Video 6: Byzantine fault tolerance.**
+##Video 6 Byzantine fault tolerance
 
 *Byzantine failures can be nodes that send conflict messages to other nodes, this can cause the results to be incorrect,
 squamous nodes can be one of the things that proves that failure, just like a malicious node that could be affected by a hacker.
 
 There are 2 general problems, the consensus problem is when two nodes*
 
-**Video 7: SLIs SLOs and SLAs**
+##Video 7: SLIs SLOs and SLAs
 
 *Review of video 7: SLI SLO and SLA
 
@@ -127,7 +143,7 @@ To reach the reliability of 99.999% per month, it is almost impossible since the
 
 Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a month that is not active. This is checked every minute.*
 
-**Video 8:**
+##Video 8 Class Project
 
 *A multi-user char will be built in the project class
 an appspot.com chat was created, upon entering you are asked if it is okay to share your email address with this application.
@@ -140,7 +156,7 @@ Scaling done, authentication done, reliable storage, multicast done, SRE as a se
 App Engine Cons:
 Cost money, only uses google login, channel deprocated, needs loadtesting, needs application-level monitoring.*
 
-**Video 9: Paxos Simplified**
+##Video 9 Paxos Simplified
 
 *Paxos is a family of protocols for solving consensus in a network of unreliable processors (that is, processors that may fail). Consensus is the process of agreeing on one result among a group of participants. This problem becomes difficult when the participants or their communication medium may experience failures.
 
@@ -148,20 +164,20 @@ Suppose the decision is to take the largest number. Therefore a proposal in a ro
 
 It also explains the problem of the Byzantine generals. How to find a traitor if there are generals or lieutenants.*
 
-**Video 11: Introduction to Blockshain Consensus**
+##Video 11 Introduction to Blockshain Consensus
 
 *This video gives us a brief summary of what the following videos will be about.
 in the first video he will explain the bitcoin dlockshain, in the second video it will be seen how to replicate a blockshain to another computer forming a consensus.
 in the third video the bitcoin blockshain consensus algorithm will be shown to compare it with the paxos algorithm.*
 
-**Video 12: What is a Blockshain**
+##Video 12 What is a Blockshain
 
 *Blockshain is a data structure
 Suppose we have a quantity of data, we store that data in a block and place an empty header. When more data arrives we create a second block in which and the hash of the first block will be placed to calculate that the first block is fine. It also serves to realize that an attacker tries to enter our block.
 In the case of blockshain bitcoins, the data is not stored in block but uses a data structure called Merkel's tree.
 A Merkel tree is a binary tree, so each node contains the ash of the nodes below it.*
 
-**Video 13: Bitcoin Blockshain Consensus**
+##Video 13 Bitcoin Blockshain Consensus
 
 *A bitcoin consensus cannot be created with basic algorithms like the raft of paxos and pbft since you may not reach a consensus because you don't have many votes available to complete the algorithm.
 Another problem is that if many bad computers are connected they can balance the votes, they can stop the system of creating consensus.
@@ -172,14 +188,14 @@ The solution to this problem is to slow down our system, so every time you want 
 When a network partition is created between the computers that were connected, the new blocks that are added will no longer get them from the other part of the network.
 to make a timer you can use cryptography and reliable computer modules.*
 
-**Video 14:**
+##Video 14 Should you use Bitcoin consensus
 
 *In bitcoin it is necessary to maintain an algorithm that is resistant to attacks, and is safe for users. Blockshain compared to other algorithms, is slower and has a high consumption of resources, but it is quite safe.
 
 A disadvantage of bitcoin is that it takes a long time to save the information of a block, since each block carries a duplicate of the previous one, but still bitcoin maintains a lower consumption of resources.
 Paxos or bullets can become even safer than the Blockshain algorithm*
 
-**Video 15: Distributed System Design Example (Unique ID)**
+##Video 15 Distributed System Design Example
 
 *The acronym in English G U I D stands for Globally Unique ID, it is a unique identifier for each transaction made, that is, it will never generate an identical number on the same computer or on a system. Like the GetDate function, you are creating a different identifier every millisecond even if the function is corrupted, but in this use it is necessary for the same computer.
 
@@ -190,7 +206,7 @@ CPU serial number
 
 To create an identifier that does not exist in the past we will use something called Monotonically increasing unique ID*
 
-**Video 16: The CAP Theorem**
+##Video 16 The CAP Theorem
 
 *The computer scientists ask: how reliable can we build a system
 Consistency
