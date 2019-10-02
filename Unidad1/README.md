@@ -1,7 +1,7 @@
-Video 1 review: What is a distributed system
------------------------------------
 
-In the video he explains that what is a distributed system, in which he recommends not doing centralized systems, these have their advantages and disadvantages
+**Video 1 review: What is a distributed system**
+
+*In the video he explains that what is a distributed system, in which he recommends not doing centralized systems, these have their advantages and disadvantages
 
 The centralized systems are low cost, easy to understand and fast for a simple user.
 
@@ -14,26 +14,21 @@ Explain distributed system part two
 -----------------------------------
 In the video he explains that a more complex system does not make it a disadvantage, since that helps to make it more secure and reliable.
 Mention that Facebook and Google use distributed systems since you have to be mass scalable,they have to be fast and very safe.
-If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other servers.
+If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other servers.*
 
 
-//////////////////////////////////////////////////
+**Video 2: It explains why we should create a distributed system.**
 
-
-Video 2: It explains why we should create a distributed system.
------------------------------------
-
-10- You should know the reasons why you should create a distributed system.
+*10- You should know the reasons why you should create a distributed system.
 9- Because it's fun and it's because it's your job to create better solutions.
 8- You will need a force server to solve problems that you cannot do simply with a simple computer. Explain that if you handle an application or chat and require information sharing, the server will also be necessary.
 7- You need policies in the distributed system (rules).
-6- You must create a system proportional to the users who use it, you should not make a system too expensive if you will not take advantage.
+6- You must create a system proportional to the users who use it, you should not make a system too expensive if you will not take advantage.*
 
 
-Continuing with the video 2 summary.
------------------------------------
+***Continuing with the video 2 summary.***
 
-5- You must create a trust-based system and have a good design implemented.
+*5- You must create a trust-based system and have a good design implemented.
 
 4- PERFORMANCE: You must have a distributed system established in a place where customers do not suffer from weak coverage. The closer it is the better.
 
@@ -45,34 +40,32 @@ Continuing with the video 2 summary.
 
 You should always know why you are going to create a distributed system, but you will only do a job for nothing.
 
-Thats all.
+Thats all.*
 
-/////////////////////////////////////////////////////
 
-Video 3: How to learn distributed system?
------------------------------------
-In the video he explains how to learn about distributed systems, which is a study in systems and not in theory.
+
+**Video 3: How to learn distributed system?**
+
+*In the video he explains how to learn about distributed systems, which is a study in systems and not in theory.
 
 It shows that systems, even if they fail, can continue to function.
 
-There are different types of architectures of distributed systems, this makes them safer for their different implementations
+There are different types of architectures of distributed systems, this makes them safer for their different implementations*
 
 
-Continuing with the video 3 summary.
+***Continuing with the video 3 summary.***
 -----------------------------------
 
-We need to know exactly what type of distributed system we are going to implement so that it has a better performance when using it.
+*We need to know exactly what type of distributed system we are going to implement so that it has a better performance when using it.
 
 We need to have established names to our processes so that they can be easily found by the other computers connected to the system.
 
-When working with distributed systems we must take into account the time, since in the systems events or situations will occur and both users and the server must be correctly synchronized.
+When working with distributed systems we must take into account the time, since in the systems events or situations will occur and both users and the server must be correctly synchronized.*
 
-/////////////////////////////////////////////////////
 
-video 4: What could go wrong?
------------------------------------
+**Video 4: What could go wrong?**
 
-The video title is: What could go wrong?
+*The video title is: What could go wrong?
 
 In the video he explains that if we make a fault-tolerant system, we must know the failures that are going to occur and identify the errors that we could not solve in case they happen.
 
@@ -81,16 +74,11 @@ He asks us a question saying what would be the problems that we would present in
 1- The server stops working
 2- That it fails constantly
 3- That the information be lost
-4- Denial of service attacks
+4- Denial of service attacks*
 
+**Video 5: The many types of failures**
 
-///////////////////////////////////////////////////////
-
-Video 5: The many types of failures
-------------------------------------
-
-
-When we make distributed systems, we have to have classified the types of failures that will present us to have better solutions.
+*When we make distributed systems, we have to have classified the types of failures that will present us to have better solutions.
 
 There is a great different between the failure of a network to the failure of a node.
 
@@ -100,35 +88,27 @@ If we have a network, the information can be set to be in 1 node or several, so 
 
 If we use a network of nodes and a node has to send information to another node, and this fails, the node will look for another route to be able to send the information that was requested. All this is done thanks to the network partition.
 
-If we are connected to a network and a node fails, the nodes will be divided into 2 subnets to continue interacting with each other. They will always be divided by 2 to have the same number of nodes.
+If we are connected to a network and a node fails, the nodes will be divided into 2 subnets to continue interacting with each other. They will always be divided by 2 to have the same number of nodes.*
 
 
-Continuing with the video 5 summary: The many types of failures
-------------------------------------
+***Continuing with the video 5 summary: The many types of failures***
 
-
-The main node failures can be caused by power outages, hardware failures or running out of memory or filling your storage disk. A fail stop is simple as any engineer can take certain strategies. when it stops and is still on one can restart it and restore the data to the last point, this is called checkpoint point, the restart time of the computer can generate high latency
+*The main node failures can be caused by power outages, hardware failures or running out of memory or filling your storage disk. A fail stop is simple as any engineer can take certain strategies. when it stops and is still on one can restart it and restore the data to the last point, this is called checkpoint point, the restart time of the computer can generate high latency
 Another option is to switch another node, for this the status is saved periodically on other computers
 
 Another fault that has to be dealt with is the Byzantine failure
-Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version
+Bit flip in memory or on disk corrupts data, you may also receive previous versions of messages or some of the nodes may run a malicious software version*
 
+**Video 6: Byzantine fault tolerance.**
 
-//////////////////////////////////////////////////////////////////
-
-Video 6: Byzantine fault tolerance.
--------------------------------------------
-
-Byzantine failures can be nodes that send conflict messages to other nodes, this can cause the results to be incorrect,
+*Byzantine failures can be nodes that send conflict messages to other nodes, this can cause the results to be incorrect,
 squamous nodes can be one of the things that proves that failure, just like a malicious node that could be affected by a hacker.
 
-There are 2 general problems, the consensus problem is when two nodes
-//////////////////////////////////////////////////////////////////
+There are 2 general problems, the consensus problem is when two nodes*
 
-Video 7: SLIs SLOs and SLAs
--------------------------------------------
+**Video 7: SLIs SLOs and SLAs**
 
-Review of video 7: SLI SLO and SLA
+*Review of video 7: SLI SLO and SLA
 
 SLI: Service level indicator (Service level indicator): What are you measuring: Indicates the response time to the request that the user is requesting from the system.
 
@@ -145,13 +125,11 @@ A reliable 99.99% system is inactive for 4 minutes per month.
 
 To reach the reliability of 99.999% per month, it is almost impossible since they are 25 inactive seconds per month and for a system to be repaired in such a short time it is difficult.
 
-Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a month that is not active. This is checked every minute.
+Microsoft, Azure, Mazon and Google promise 99.95% uptime, which is 22 minutes a month that is not active. This is checked every minute.*
 
-//////////////////////////////////////////////////////////////////
+**Video 8:**
 
-Video 8:
--------------------------------------------
-A multi-user char will be built in the project class
+*A multi-user char will be built in the project class
 an appspot.com chat was created, upon entering you are asked if it is okay to share your email address with this application.
 Once accessing, it retrieves the last message sent on the server and displays it on the screen.
 When you send a new message in the chat, everyone who is connected to the server can see the message, and it is saved in the app engine data store.
@@ -160,79 +138,61 @@ AppEngine Pros:
 Scaling done, authentication done, reliable storage, multicast done, SRE as a service, simple code.
 
 App Engine Cons:
-Cost money, only uses google login, channel deprocated, needs loadtesting, needs application-level monitoring.
+Cost money, only uses google login, channel deprocated, needs loadtesting, needs application-level monitoring.*
 
+**Video 9: Paxos Simplified**
 
-//////////////////////////////////////////////////////////////////
-
-
-Video 9: Paxos Simplified
--------------------------------------------
-Paxos is a family of protocols for solving consensus in a network of unreliable processors (that is, processors that may fail). Consensus is the process of agreeing on one result among a group of participants. This problem becomes difficult when the participants or their communication medium may experience failures.
+*Paxos is a family of protocols for solving consensus in a network of unreliable processors (that is, processors that may fail). Consensus is the process of agreeing on one result among a group of participants. This problem becomes difficult when the participants or their communication medium may experience failures.
 
 Suppose the decision is to take the largest number. Therefore a proposal in a round is considered valid if it is greater than the rest of the proposals in that round. All those proposals for that round with smaller numbers are considered invalid.
 
-It also explains the problem of the Byzantine generals. How to find a traitor if there are generals or lieutenants.
+It also explains the problem of the Byzantine generals. How to find a traitor if there are generals or lieutenants.*
 
-//////////////////////////////////////////////////////////////////
+**Video 11: Introduction to Blockshain Consensus**
 
-Video 11: Introduction to Blockshain Consensus
--------------------------------------------
-
-This video gives us a brief summary of what the following videos will be about.
+*This video gives us a brief summary of what the following videos will be about.
 in the first video he will explain the bitcoin dlockshain, in the second video it will be seen how to replicate a blockshain to another computer forming a consensus.
-in the third video the bitcoin blockshain consensus algorithm will be shown to compare it with the paxos algorithm.
+in the third video the bitcoin blockshain consensus algorithm will be shown to compare it with the paxos algorithm.*
 
-//////////////////////////////////////////////////////////////////
+**Video 12: What is a Blockshain**
 
-Video 12: What is a Blockshain
--------------------------------------------
-Blockshain is a data structure
+*Blockshain is a data structure
 Suppose we have a quantity of data, we store that data in a block and place an empty header. When more data arrives we create a second block in which and the hash of the first block will be placed to calculate that the first block is fine. It also serves to realize that an attacker tries to enter our block.
 In the case of blockshain bitcoins, the data is not stored in block but uses a data structure called Merkel's tree.
-A Merkel tree is a binary tree, so each node contains the ash of the nodes below it.
+A Merkel tree is a binary tree, so each node contains the ash of the nodes below it.*
 
-//////////////////////////////////////////////////////////////////
+**Video 13: Bitcoin Blockshain Consensus**
 
-Video 13: Bitcoin Blockshain Consensus
--------------------------------------------
-A bitcoin consensus cannot be created with basic algorithms like the raft of paxos and pbft since you may not reach a consensus because you don't have many votes available to complete the algorithm.
+*A bitcoin consensus cannot be created with basic algorithms like the raft of paxos and pbft since you may not reach a consensus because you don't have many votes available to complete the algorithm.
 Another problem is that if many bad computers are connected they can balance the votes, they can stop the system of creating consensus.
 Bitcoin needs an algorithm that is resistant to attackers who have accessed.
 To generate a bitcoin consensus you need to create a new block, that new block needs to be replicated to all the good nodes of the system.
 Our systems have livelock because we can add new blocks faster than learn them.
 The solution to this problem is to slow down our system, so every time you want to add a block you sleep a random period of time and after that time the block is added.
 When a network partition is created between the computers that were connected, the new blocks that are added will no longer get them from the other part of the network.
-to make a timer you can use cryptography and reliable computer modules.
-//////////////////////////////////////////////////////////////////
+to make a timer you can use cryptography and reliable computer modules.*
 
-Video 14:
--------------------------------------------
+**Video 14:**
 
-In bitcoin it is necessary to maintain an algorithm that is resistant to attacks, and is safe for users. Blockshain compared to other algorithms, is slower and has a high consumption of resources, but it is quite safe.
+*In bitcoin it is necessary to maintain an algorithm that is resistant to attacks, and is safe for users. Blockshain compared to other algorithms, is slower and has a high consumption of resources, but it is quite safe.
 
 A disadvantage of bitcoin is that it takes a long time to save the information of a block, since each block carries a duplicate of the previous one, but still bitcoin maintains a lower consumption of resources.
-Paxos or bullets can become even safer than the Blockshain algorithm
+Paxos or bullets can become even safer than the Blockshain algorithm*
 
-//////////////////////////////////////////////////////////////////
+**Video 15: Distributed System Design Example (Unique ID)**
 
-Video 15: Distributed System Design Example (Unique ID)
--------------------------------------------
-The acronym in English G U I D stands for Globally Unique ID, it is a unique identifier for each transaction made, that is, it will never generate an identical number on the same computer or on a system. Like the GetDate function, you are creating a different identifier every millisecond even if the function is corrupted, but in this use it is necessary for the same computer.
+*The acronym in English G U I D stands for Globally Unique ID, it is a unique identifier for each transaction made, that is, it will never generate an identical number on the same computer or on a system. Like the GetDate function, you are creating a different identifier every millisecond even if the function is corrupted, but in this use it is necessary for the same computer.
 
 For this you can use the identity, which consists of:
 IP address
 Ethernet HW Address
 CPU serial number
 
-To create an identifier that does not exist in the past we will use something called Monotonically increasing unique ID
+To create an identifier that does not exist in the past we will use something called Monotonically increasing unique ID*
 
-//////////////////////////////////////////////////////////////////
+**Video 16: The CAP Theorem**
 
-Video 16: The CAP Theorem
--------------------------------------------
-
-The computer scientists ask: how reliable can we build a system
+*The computer scientists ask: how reliable can we build a system
 Consistency
 Availability
 Partition Tolerance
@@ -247,4 +207,9 @@ The second is that the client goes to the other ATM and is not working either
 
 
 For these types of problems, it is necessary to use “The Cap Theorem”
-Formalizes the trade-off between consistency and availability in the presence of partitions
+Formalizes the trade-off between consistency and availability in the presence of partitions*
+
+
+**Authors**
+*Martinez Iribe David Ernesto
+Quintero Renteria Omar Israel*
