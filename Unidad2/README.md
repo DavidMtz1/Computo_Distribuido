@@ -1,4 +1,4 @@
-Asynchronous programming in Python
+***Asynchronous programming in Python***
 
 In the document explains the differences that characterize asynchronous programming in Python, it can perform different processes even if it does not completely end each thread.
 
@@ -13,7 +13,7 @@ Corroutines are similar to generators but with few additional methods and a slig
 
 
 
-Asynchronous programming
+***Asynchronous programming***
 
 asyncio is the new concurrency module introduced in Python 3.4. It is designed to use corroutines and futures to simplify the asynchronous code and make it almost as readable as the synchronous code since there are no callbacks.
 Asyncio uses different constructions: loops of events, corutins and futures.
@@ -24,7 +24,8 @@ Futures represent the result of a task that may or may not have been executed. T
 With Asyncio, it allows you to structure your code so that subtasks are defined as corroutines and allows you to program them as you wish, even simultaneously. Routines contain performance points where we define possible points where a context change can occur if there are other pending tasks, but it will not do so if there is no other pending task.
 
 
-Async IO in Python: A Complete Walkthrough
+***Async IO in Python: A Complete Walkthrough***
+
 In order to use Python Asynchronous IO (async IO), it is necessary to upgrade to version 3.7.
 
 The parallelism consists in performing multiple operations at the same time. Multiprocessing is a means to achieve parallelism and involves the distribution of tasks over the central processing units (CPUs or cores) of a computer. Multiprocessing is very suitable for CPU-related tasks: tightly linked forbucles and mathematical calculations generally fall into this category.
@@ -38,43 +39,47 @@ In fact, async IO is a single process and single thread design: it uses cooperat
 As we saw earlier, an asynchronous routine can pause your results, allowing other routines to run.
 An asynchronous code, using the previous mechanism facilitates concurrent execution.
 
+The asynchronous code, through the previous mechanism, facilitates concurrent execution. To put it another way, the asynchronous code gives the appearance of concurrency.
 
-El código asincrónico, a través del mecanismo anterior, facilita la ejecución concurrente. Para decirlo de otra manera, el código asincrónico da la apariencia de concurrencia.
+Async IO takes long waiting periods in which functions would otherwise be locked and allows other functions to be executed during that downtime
 
-Async IO toma largos períodos de espera en los cuales las funciones de otra forma estarían bloqueadas y permite que otras funciones se ejecuten durante ese tiempo de inactividad.
+It is worth mentioning that asynchronous programming in Python is not simple, since we have been shown different topics to address such as multiprocesses, threads and concurrence in processes. And what we have investigated is true, asynchronous programming is difficult and make a multithreaded code as well, but thanks to the Python library called Async IO it gives us the tools to make it possible.
 
-Cabe mencionar que la programación asíncrona en Python no es sencilla, ya que nos han mostrado diferentes temas a abordar como los multiprocesos, los hilos y la concurrencia en los procesos. Y a lo que hemos investigado es cierto, la programación asíncrona es difícil y hacer un código de multiproceso también, pero gracias la librería de Python llamada Async IO nos brinda las herramientas para hacerlo posible.
+***Chaining Corutinas***
 
-Encadenando Corutinas
-Una característica clave de las corutinas es que se pueden encadenar juntas. Esto le permite dividir los programas en pequeñas, manejables y reciclables.
+A key feature of corutins is that they can be chained together. This allows you to divide the programs into small, manageable and recyclable.
 
-Usando una cola
-El asyncio paquete proporciona clases de cola que están diseñadas para ser similares a las clases del módulo queue.
-Existe una estructura alternativa que también puede funcionar con IO asíncrona: varios productores, que no están asociados entre sí, agregan elementos a una cola. Cada productor puede agregar varios elementos a la cola en momentos escalonados, aleatorios y sin previo aviso. Un grupo de consumidores saca artículos de la cola a medida que aparecen, con avidez y sin esperar ninguna otra señal.
+***Using a tail***
 
-Procesamiento Paralelo
-El procesamiento paralelo es un modo de operación donde la tarea se ejecuta simultáneamente en múltiples procesadores en la misma computadora. Está destinado a reducir el tiempo total de procesamiento.
-La cantidad máxima de procesos que puede ejecutar a la vez está limitada por la cantidad de procesadores en su computadora. Si no sabe cuántos procesadores hay en la máquina, la función lo mostrará.cpu_count()multiprocessing
+The asyncio package provides queue classes that are designed to be similar to the queue module classes.
+There is an alternative structure that can also work with asynchronous IO: several producers, who are not associated with each other, add elements to a queue. Each producer can add several elements to the queue at staggered, random moments and without prior notice. A group of consumers pull items out of the queue as they appear, greedily and without waiting for any other signal.
 
-Una ejecución síncrona es aquella en la que los procesos se completan en el mismo orden en que se inició. Esto se logra bloqueando el programa principal hasta que finalicen los procesos respectivos.
+***Parallel Processing***
 
-Asíncrono, por otro lado, no implica bloqueo. Como resultado, el orden de los resultados puede confundirse, pero generalmente se hace más rápido.
+Parallel processing is a mode of operation where the task runs simultaneously on multiple processors on the same computer. It is intended to reduce the total processing time.
+The maximum number of processes you can run at once is limited by the number of processors on your computer. If you don't know how manyprocessors are in the machine, the function will show it.cpu_count () multiprocessing
 
-Paralelización usando Pool.apply ()
-Se paraleliza la función usando .howmany_within_range()multiprocessing.Pool()
+A synchronous execution is one in which the processes are completed in the same order in which they started. This is achieved by blocking the main program until the respective processes are finished.
 
+Asynchronous, on the other hand, does not imply blocking. As a result, the order of the results can be confused, but generally it becomes faster.
 
+***Parallelization using Pool.apply ()***
 
-Paralelización usando Pool.map ()
-Pool.map()acepta solo un iterable como argumento. 
+The function is parallelized using .howmany_within_range () multiprocessing.Pool ()
 
-Paralelización usando Pool.starmap ()
-Acepta solo un iterable como argumento, pero en , cada elemento en ese iterable también es iterable. Puede proporcionar los argumentos a la 'función a ser paralelizada' en el mismo orden en este elemento iterable interno, a su vez se desempaquetará durante la ejecución.Pool.map()Pool.starmap()starmap()
+***Parallelization using Pool.map ()***
 
-Procesamiento paralelo asincrónico
-Los equivalentes asíncronos , y le permiten ejecutar los procesos en paralelo de forma asíncrona, es decir, el siguiente proceso puede comenzar tan pronto como se complete el anterior sin tener en cuenta el orden de inicio. Como resultado, no hay garantía de que el resultado esté en el mismo orden que la entrada.apply_async()map_async()starmap_async()
+Pool.map () accepts only one iterable argument.
 
-Paralelización con Pool.apply_async ()
-apply_async() debe proporcionar una función de devolución de llamada que le indique cómo se deben almacenar los resultados calculados.apply()
+***Parallelization using Pool.starmap ()***
 
-Cuando se trata de paralelizar a DataFrame, puede hacer que la función sea paralelizada para tomar como parámetro de entrada una fila del marco de datos, una columna del marco de datos, todo el marco de datos en sí.
+Accept only one iterable as an argument, but in, each element in that iterable is also iterable. You can provide the arguments to the 'function to be parallelized' in the same order in this internal iterable element, in turn it will be unpacked during execution.Pool.map () Pool.starmap () starmap ()
+
+***Asynchronous Parallel Processing***
+
+Asynchronous equivalents, and allow you to execute processes in parallel asynchronously, that is, the next process can begin as soon as the previous one is completed without taking into account the starting order. As a result, there is no guarantee that the result will be in the same order as the entry.apply_async () map_async () starmap_async ()
+
+***Parallelization with Pool.apply_async ()***
+
+apply_async () must provide a callback function that tells you how the calculated results should be stored.
+When it comes to parallelizing DataFrame, you can make the function parallel to take as input parameter a row of the data frame, a column of the data frame, the entire data frame itself.
